@@ -1,43 +1,39 @@
 <app-navigation></app-navigation>
 
-<div class="container pl-5">
-    <div class="row pt-1 mt-5">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">Current Queues</div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush" *ngFor="let variable of dept; index as i">
-                        <!--for loop ng department queues current-->
-                        <li class="list-group-item">variable name<span class="badge badge-dark float-right">variable name</span></li>
-                    </ul>
+<div class="container-fluid">
+    <div class="row pt-1 mt-3">
+        <div class="col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        Today<span class="badge badge-dark float-right">Number</span>
+                    </div>
                 </div>
-            </div>
-
-        </div>
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md">
-                    <div class="card">
-                        <div class="card-header">Weekly Chart</div>
-                        <app-bar-chart></app-bar-chart>
+                <div class="card">
+                    <div class="card-body">
+                        This Week<span class="badge badge-dark float-right">Number</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        This Month<span class="badge badge-dark float-right">Number</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        Annual<span class="badge badge-dark float-right">Number</span>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                    <div class="col-md">
-                            <div class="card">
-                                <div class="card-header">Total Transactions<span class="badge badge-dark float-right">Number</span></div>
-                                <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Today<span class="badge badge-dark float-right">Number</span></li>
-                                        <li class="list-group-item">This Week<span class="badge badge-dark float-right">Number</span></li>
-                                        <li class="list-group-item">This Month<span class="badge badge-dark float-right">Number</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <div class="row pt-1">
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header py-1">Weekly Chart</div>
+                    <app-bar-chart></app-bar-chart>
+                </div>
             </div>
-                
         </div>
     </div>
 </div>

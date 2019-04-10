@@ -7,4 +7,5 @@ html, body {
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding-left: 0%;
 }
